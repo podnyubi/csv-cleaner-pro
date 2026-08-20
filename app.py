@@ -26,7 +26,7 @@ if "last_logs" not in st.session_state:
     st.session_state.last_logs = []
 
 FREE_LIMIT = 3
-GUMROAD_LINK = "https://yourname.gumroad.com/l/csv-cleaner"  # <-- Thay link thật của bạn sau
+GUMROAD_LINK = "https://nyubi.gumroad.com/l/csvpro"  # <-- Thay link thật của bạn sau
 
 # ====================== HEADER ======================
 st.title("🧹 CSV Cleaner Pro")
@@ -43,7 +43,7 @@ def check_access():
 # Sidebar - License
 st.sidebar.header("🔑 License")
 license_key = st.sidebar.text_input("Enter License Key (after purchase)", type="password")
-if license_key.strip().lower() == "pro-2026":  # Key demo, bạn đổi sau
+if license_key.strip().lower() == "csvpro-2026":  # Key demo, bạn đổi sau
     st.session_state.is_unlocked = True
     st.sidebar.success("Unlocked - Full version")
 elif st.session_state.is_unlocked:
@@ -350,3 +350,4 @@ with tab3:
 
 st.markdown("---")
 st.caption("CSV Cleaner Pro • Full version with PDF, History, Compare & Paywall")
+Update Gumroad link and license key
